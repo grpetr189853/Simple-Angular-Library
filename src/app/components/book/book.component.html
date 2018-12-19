@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="wrapper col-md-12">
+      <select name="" id="booksSelect{{componentId}}" class="form-control mt-2">
+        <option *ngFor="let book of books" value="{{book.id}}" >{{book.name}}</option>
+      </select>
+      <select name="" id="readerSelect{{componentId}}" class="form-control mt-2">
+        <option *ngFor="let reader of readers" value="{{reader.id}}">{{reader.fullname}}</option>
+      </select>
+      <button (click)="takeBook($event)" class="btn btn-primary form-control mt-2">Take</button>
+    </div>
+  </div>
+</div>

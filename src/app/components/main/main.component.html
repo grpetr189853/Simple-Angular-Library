@@ -1,0 +1,5 @@
+<!--<app-booklist (TakeBook)="takeBook($event)" ></app-booklist>-->
+<div #componentsContainer ></div>
+<button (click)="createChildComponent($event)" (TakeBook)="takeBook($event)" class="btn btn-primary mt-2">Create bookListComponent</button>
+<button class="btn btn-primary mt-2 ml-2" (click)="showBooks()">Show books</button>
+
